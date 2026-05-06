@@ -28,7 +28,7 @@ const HowWeWork = () => {
     ];
 
     return (
-        <section className="relative w-full flex items-center px-6 2xl:px-14 md:px-12 py-14 overflow-hidden ">
+        <section className="relative w-full flex items-center px-6 2xl:px-14 md:px-12 py-10 md:py-14 overflow-hidden ">
             <div className="w-full flex flex-col items-center text-center">
 
                 {/* Title */}

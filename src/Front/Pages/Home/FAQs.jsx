@@ -44,7 +44,7 @@ const FAQs = () => {
     };
 
     return (
-        <section className="relative w-full px-6 2xl:px-14 md:px-12 py-14 overflow-hidden">
+        <section className="relative w-full px-6 2xl:px-14 md:px-12 py-10 md:py-14 overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
 
                 {/* Left Title */}

@@ -122,6 +122,12 @@ Button
     }
 }
 
+.team-swiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .hiw-card {
     background:
         radial-gradient(circle at 100% 100%, #fff 0, #fff 37px, transparent 37px) 0 0/38px 38px no-repeat,
@@ -137,17 +143,23 @@ Button
 
 @media (min-width: 640px) {
     .common-section-title {
-        font-size: 44px;
+        font-size: 40px;
     }
 }
 
 @media (min-width: 768px) {
     .common-section-title {
-        font-size: 52px;
+        font-size: 50px;
     }
 }
 
 @media (min-width: 1024px) {
+    .common-section-title {
+        font-size: 56px;
+    }
+}
+
+@media (min-width: 1400px) {
     .common-section-title {
         font-size: 64px;
     }

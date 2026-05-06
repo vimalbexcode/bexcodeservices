@@ -7,10 +7,18 @@ import FAQs from "./FAQs";
 import Footer from "../../Components/Footer/Footer";
 import '../../Styles/CssHome/CssCapsule.css';
 import Reclaim from "./Reclaim";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
     return (
         <>
+            <Helmet>
+                <title>IT Service - BexCode Services</title>
+                <meta
+                    name="description"
+                    content="From web &amp; app dev to DevOps and data, get dedicated engineers who own delivery — shipped on your timeline."
+                />
+            </Helmet>
             <Header></Header>
             <BannerHome></BannerHome>
             <CapabilityBuckets></CapabilityBuckets>

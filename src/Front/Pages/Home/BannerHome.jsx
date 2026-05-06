@@ -9,7 +9,7 @@ import Capsule from "./Capsule";
 const BannerHome = () => {
     return (
         <>
-            <section className="relative w-full flex items-center pl-6 2xl:pl-14 md:pl-12 py-14 overflow-hidden"
+            <section className="relative w-full flex items-center pl-6 2xl:pl-14 md:pl-12 py-10 md:py-14 overflow-hidden"
             // style={{
             //     backgroundImage: `url(${bannerBg})`,
             // }}
