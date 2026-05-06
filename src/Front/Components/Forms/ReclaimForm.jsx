@@ -17,7 +17,7 @@ const ReclaimForm = () => {
 
         try {
             const response = await fetch(
-                "http://apibw.rxavenue.com/public/api/contactus",
+                "http://apibw.rxavenue.com/api/contactus",
                 {
                     method: "POST",
                     headers: {
@@ -27,10 +27,11 @@ const ReclaimForm = () => {
                     body: JSON.stringify({
                         fname: "Reclaim",
                         lname: "Lead",
-                        email: email,
+                        email: email, // user entered email
                         phone: "0000000000",
                         topic: "Get Started Now",
-                        message: "User submitted Reclaim CTA form",
+                        message:
+                            "Lead submitted from Reclaim CTA form. Send reply to aakash@bexcodeservices.com",
                     }),
                 }
             );
@@ -118,7 +119,7 @@ const ReclaimForm = () => {
 
             {/* Success Message */}
             {successMsg && (
-                <p className="text-green-600 text-center mt-4 text-sm sm:text-base">
+                <p className="text-green-600 text-center mt-4 text-sm sm:text-base max-w-[900px] mx-auto bg-">
                     {successMsg}
                 </p>
             )}

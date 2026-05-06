@@ -17,7 +17,7 @@ const SubscribeForm = () => {
 
         try {
             const response = await fetch(
-                "http://apibw.rxavenue.com/public/api/contactus",
+                "http://apibw.rxavenue.com/api/contactus",
                 {
                     method: "POST",
                     headers: {
@@ -25,8 +25,13 @@ const SubscribeForm = () => {
                         Accept: "application/json",
                     },
                     body: JSON.stringify({
-                        email: email,
-                        message: "New user subscribed to newsletter",
+                        fname: "Newsletter",
+                        lname: "Subscriber",
+                        email: email, // user entered email
+                        phone: "0000000000",
+                        topic: "Newsletter Subscription",
+                        message:
+                            "New newsletter subscriber. Notify aakash@bexcodeservices.com",
                     }),
                 }
             );
@@ -37,10 +42,15 @@ const SubscribeForm = () => {
 
             const result = await response.json();
 
-            setMessage(result.message || "Email sent successfully");
+            setMessage(
+                result.message || "Email sent successfully"
+            );
+
             setEmail("");
         } catch (err) {
-            setError(err.message || "Something went wrong");
+            setError(
+                err.message || "Something went wrong"
+            );
         } finally {
             setLoading(false);
         }
